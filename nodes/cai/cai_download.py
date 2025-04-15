@@ -9,9 +9,9 @@ class CivitAIDownloader(BaseModelDownloader):
     def INPUT_TYPES(cls):
         return {
             "required": {       
-                "model_id": ("STRING", {"multiline": False, "default": "360292"}),
-                "version_id": ("STRING", {"multiline": False, "default": "", "placeholder": "Leave empty for latest version"}),
-                "token_id": ("STRING", {"multiline": False, "default": "API_token_here"}),
+                "model_id": ("STRING", {"default": "", "tooltip" : "model id"}),
+                "version_id": ("STRING", {"default": "", "tooltip": "Leave empty for latest version"}),
+                "token_id": ("STRING", {"default": "", "tooltip": "api token"}),
                 "save_dir": (get_model_dirs(),),
             },
             "hidden": {

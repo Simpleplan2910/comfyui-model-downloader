@@ -18,7 +18,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
 }
 
 # Web directory for JavaScript files
-WEB_DIRECTORY = os.path.join(os.path.dirname(os.path.realpath(__file__)), "js")
+WEB_DIRECTORY = "./js"
 
 __all__ = [
     "NODE_CLASS_MAPPINGS",
